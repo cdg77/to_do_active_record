@@ -1,12 +1,12 @@
-# _{Application Name}_
+# _{Carlo DeGregorio}_
 
-##### _{Brief description of application}, {Date of current version}_
+##### _{To Do List built with Ruby}, {08/24/15}_
 
-#### By _**{List of contributors}**_
+#### By _**{Carlo DeGregorio}**_
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. Do you want other developers to use this code in their apps? Talk about things like that here in simple terms.}_
+_{This is a to-do list built following a tutorial from https://www.learnhowtoprogram.com.  The user can create lists of tasks with descriptions and see those lists and descriptions in the browser.}_
 
 ## Setup
 
@@ -16,17 +16,17 @@ _{This is a detailed description of your application. Give as much detail as nee
 * _easy-to-understand_
 * _format_
 
-_{Leave nothing to chance! You want it to be easy for potential employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Are there other applications this app depends on?}_
+_{You will need to set up a database and server.}_
 
 ## Technologies Used
 
-_{Tell me about the languages you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_{Ruby, Capybara, RSpec, ActiveRecord, PSQL, Sinatra}_
 
 ### Legal
 
 *{This is boilerplate legal language. Read through it, and if you like it, use it. There are other license agreements online, but you can generally copy and paste this.}*
 
-Copyright (c) 2015 **_{List of contribtors}_**
+Copyright (c) 2015 **_{Carlo DeGregorio}_**
 
 This software is licensed under the MIT license.
 
