@@ -24,12 +24,15 @@
 
 </div>
 
-<p>Create a new task: </p>
 
-<form class="" action="/tasks" method="post">
-  <label for="description">Description</label>
-  <input type="text" name="description">
+<form class="form-horizontal" action="/tasks" method="post">
+  <fieldset>
+    <p class='text-muted'>Create a new task: </p>
 
-  <button class="btn btn-primary" type="submit">ADD Task</button>
+    <label for="description">Description</label>
+    <input type="text" name="description">
 
-</form>
+    <button class="btn btn-primary" type="submit">ADD Task</button>
+
+  </form>
+</fieldset>

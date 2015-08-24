@@ -1,6 +1,6 @@
 <h1>Update <%=@task.description() %> </h1>
 
-<form class="" action="/tasks/<%= task.id() %>" method="post">
+<form class="form-horizontal" action="/tasks/<%= task.id() %>" method="post">
   <input type="hidden" name="_method" value="patch">
   <label for="description">Redescribe your task:</label>
   <input id="description" type="text" name="description">

@@ -13,6 +13,11 @@ describe(Task) do
     expect(task.save()).to(eq(false))
   end
 
+  it('ensures the description length is at most 50 characters') do
+    task = Task.new({:description => 'a'.*(51)})
+    expect(task.save()).to(eq(false))
+  end
+
   describe(".not_done") do
       it("returns the not done tasks") do
         not_done_task1 = Task.create({ :description => "gotta do it", :done => false })
