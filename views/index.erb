@@ -1,0 +1,19 @@
+<h1>To Do</h1>
+
+<p>Here are all your tasks:</p>
+
+<ul>
+  <%  @tasks.not_done().each() do |task| %>
+    <li><%= task.description %> <a href="/tasks/<%= task.id()%>/edit">Update Description</a></li>
+  <% end %>
+</ul>
+
+<p>Create a new task: </p>
+
+<form class="" action="/tasks" method="post">
+  <label for="description">Description</label>
+  <input type="text" name="description">
+
+  <button type="submit">ADD Task</button>
+
+</form>
