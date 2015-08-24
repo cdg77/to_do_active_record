@@ -8,6 +8,11 @@ describe(Task) do
     expect(task.list()).to(eq(list))
   end
 
+  it('validates that the user entered a description') do
+    task = Task.new({:description => "" })
+    expect(task.save()).to(eq(false))
+  end
+
   describe(".not_done") do
       it("returns the not done tasks") do
         not_done_task1 = Task.create({ :description => "gotta do it", :done => false })
