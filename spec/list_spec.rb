@@ -1,5 +1,4 @@
-require('rspec')
-require ('list')
+require('spec_helper')
 
 describe do |variable|
 

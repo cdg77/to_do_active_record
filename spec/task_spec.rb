@@ -1,6 +1,5 @@
-require('rspec')
-require ('task')
+require('spec_helper')
 
-describe do |variable|
+describe do
 
 end
