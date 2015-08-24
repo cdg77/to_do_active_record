@@ -1,12 +1,28 @@
-<h1>To Do</h1>
+<div class="jumbotron">
+  <h1>To Do</h1>
 
-<p>Here are all your tasks:</p>
+  <% if @tasks.any?() %>
+  <p>Here are all your tasks:</p>
 
-<ul>
-  <%  @tasks.not_done().each() do |task| %>
-    <li><%= task.description %> <a href="/tasks/<%= task.id()%>/edit">Update Description</a></li>
-  <% end %>
-</ul>
+  <ul>
+    <%  @tasks.not_done().each() do |task| %>
+      <li><%= task.description %> <a href="/tasks/<%= task.id()%>/edit">Update Description</a></li>
+    <% end %>
+  </ul>
+  <% else %>
+
+  <div class="alert alert-dismissible alert-danger">
+  <button type="button" class="close" data-dismiss="alert">×</button>
+  <h4><strong>RELAX!</strong>  You have nothing TO DO!</h4>
+  <h3 class="text-primary">
+    <strong></strong>
+  </h3>
+
+</div>
+
+<% end %>
+
+</div>
 
 <p>Create a new task: </p>
 
@@ -14,6 +30,6 @@
   <label for="description">Description</label>
   <input type="text" name="description">
 
-  <button type="submit">ADD Task</button>
+  <button class="btn btn-primary" type="submit">ADD Task</button>
 
 </form>
